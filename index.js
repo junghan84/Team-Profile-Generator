@@ -19,7 +19,7 @@ const addIntern = require('./src/inter.js');
 //Handles promts
 const team =[];
 
-//promt manager
+//Add new manager
 const Managers = [
     {
         type: 'confirm',
@@ -53,4 +53,64 @@ const Managers = [
         message: "Next"
     },
 
-]
+];
+// Add new engineer
+const engineers = [
+    {
+        type: 'input',
+        name: 'name',
+        message: "Please enter the name"
+    },
+    {
+        type: 'input',
+        name: 'id',
+        message: "Please enter ID number"
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: "Please enter your email address"
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: "Please enter your Github username"
+    },
+    {
+        type: 'list',
+        name: 'nextEmployee',
+        choices:['Add Engineer','Add Interen', 'My team is complete!'],
+        message: "Next"
+    },
+
+];
+// Add new intern
+const interns = [
+    {
+        type: 'input',
+        name: 'name',
+        message: "Please enter the name"
+    },
+    {
+        type: 'input',
+        name: 'id',
+        message: "Please enter ID number"
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: "Please enter your email address"
+    },
+    {
+        type: 'input',
+        name: 'school',
+        message: "Which school are you atteding?"
+    },
+    {
+        type: 'list',
+        name: 'nextEmployee',
+        choices:['Add Engineer','Add Interen', 'My team is complete!'],
+        message: "Next"
+    },
+
+];
