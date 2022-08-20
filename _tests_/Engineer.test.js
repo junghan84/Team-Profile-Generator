@@ -4,6 +4,6 @@ test("Create an engineer object", () => {
 
     const engineer = new Engineer("Joy", 9999, "joy@gmail.com", "joyRo")
 
-    expect(engineer.github).toEqual(expect.any(string))
+    expect(engineer.github).toEqual("joyRo")
 
 });

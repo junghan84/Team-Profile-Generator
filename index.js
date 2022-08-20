@@ -8,7 +8,7 @@ const path = require("path");
 const fs = require("fs");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputPath = path.join(OUTPUT_DIR, "./dist/team.html");
 const render = require('./src/generateTemplate.js');
 
 //Handles promts
@@ -152,7 +152,15 @@ function addEngineer() {
 function htmlCreater () {
     console.log("Team created!")
 
-    fs.writeFile('./dist/team.html', render(teamArray), "UTF-8")
+    fs.writeFile("./dist/team.html", render(teamArray), (err) =>{
+      if(err){
+        console.log(err)
+        
+      }
+      else{
+        console.log("You create HTML")
+      }
+    })
 
 }
 
