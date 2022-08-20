@@ -152,7 +152,7 @@ function addEngineer() {
 function htmlCreater () {
     console.log("Team created!")
 
-    fs.writeFileSync(outputPath, render(teamArray), "UTF-8")
+    fs.writeFile('./dist/team.html', render(teamArray), "UTF-8")
 
 }
 
